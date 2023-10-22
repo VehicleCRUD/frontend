@@ -11,16 +11,16 @@ import { VehicleEditComponent } from './vehicle-edit/vehicle-edit.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    VehicleWrapperComponent,
-    VehicleEditComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     VehicleDisplayComponent,
-    VehicleInputComponent
+    VehicleInputComponent,
+    VehicleWrapperComponent,
+    VehicleEditComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,7 +5,7 @@
         <mat-card-subtitle>{{vehicle.year}} {{vehicle.color}}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-actions align="end">
-        <!--<button mat-button (click)="editItemEvent.emit(vehicle.id)">Edit</button>-->
+        <button mat-button (click)="editItemEvent.emit(vehicle.id)">Edit</button>
         <button mat-button (click)="removeItemEvent.emit(vehicle.id)">Delete</button>
       </mat-card-actions>
     </mat-card>

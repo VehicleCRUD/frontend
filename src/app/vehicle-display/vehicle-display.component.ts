@@ -16,5 +16,5 @@ export class VehicleDisplayComponent {
   @Input() vehicle: Vehicle = new Vehicle(0, "", "", 0, "");
 
   @Output() removeItemEvent = new EventEmitter();
-  //@Output() editItemEvent = new EventEmitter();
+  @Output() editItemEvent = new EventEmitter();
 }
