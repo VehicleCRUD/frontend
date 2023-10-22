@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VehicleDisplayComponent } from './vehicle-display/vehicle-display.component';
 import { VehicleInputComponent } from './vehicle-input/vehicle-input.component';
+import { VehicleWrapperComponent } from './vehicle-wrapper/vehicle-wrapper.component';
+import { VehicleEditComponent } from './vehicle-edit/vehicle-edit.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VehicleWrapperComponent,
+    VehicleEditComponent
   ],
   imports: [
     BrowserModule,
