@@ -9,14 +9,14 @@ import { VehicleInputComponent } from './vehicle-input/vehicle-input.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    VehicleInputComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    VehicleDisplayComponent
+    VehicleDisplayComponent,
+    VehicleInputComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

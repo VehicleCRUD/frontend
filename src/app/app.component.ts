@@ -18,4 +18,8 @@ export class AppComponent {
       "http://localhost:8080/vehicles"
     ).subscribe(data => this.vehicles = data);
   }
+
+  appendData(newVehicle: any): void {
+    this.vehicles.push(newVehicle);
+  }
 }
