@@ -1,6 +1,6 @@
 <p>
     <app-vehicle-edit *ngIf="editable == true"
-                      (editDataEvent)="handleSaveEdition($event)"
+    (editDataEvent)="handleSaveEdition($event)"
                       [vehicle]="vehicle"/>
     
     <app-vehicle-display *ngIf="editable == false"

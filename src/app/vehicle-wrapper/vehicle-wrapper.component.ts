@@ -17,6 +17,8 @@ export class VehicleWrapperComponent {
   @Input() vehicle: Vehicle = new Vehicle(0, "", "", 0, "");
   @Output() removeItemEvent = new EventEmitter();
 
+  editable: boolean = false;
+
   handleEditClick(): void {
     this.editable = true;
   }
