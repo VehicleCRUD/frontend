@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+import {Vehicle} from './vehicle';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'crud-frontend';
+  vehicles: Vehicle[] = [];
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
+    this.http.get<Vehicle[]>(
+      "http://localhost:8080/vehicles"
+    ).subscribe(data => this.vehicles = data);
+  }
 }
