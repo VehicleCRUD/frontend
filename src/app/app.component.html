@@ -5,6 +5,7 @@
 
   <h2>My vehicles list</h2>
   <app-vehicle-display *ngFor="let vehicle of vehicles"
+  (removeItemEvent)="removeItem($event)"
                        [vehicle]="vehicle"
   />
 </div>

@@ -22,4 +22,10 @@ export class AppComponent {
   appendData(newVehicle: any): void {
     this.vehicles.push(newVehicle);
   }
+
+  removeItem(vehicleId: number): void {
+    this.http.delete(
+      "http://localhost:8080/vehicles/" + vehicleId,
+    ).subscribe(data => this.vehicles = this.vehicles.filter((vehicle: Vehicle) => vehicle.id != vehicleId));
+  }
 }
